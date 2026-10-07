@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What to Eat Today</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>What to Eat Today?</h1>
+  <p id="status"></p>
+
+  <div id="step1">
+    <h2>Question 1: Hot or cold?</h2>
+    <button onclick="selectTemp('hot')">Hot</button>
+    <button onclick="selectTemp('cold')">Cold</button>
+  </div>
+
+  <div id="step2" class="hidden">
+    <h2>Question 2: What flavor?</h2>
+    <button onclick="selectTaste('spicy')">Spicy</button>
+    <button onclick="selectTaste('mild')">Mild</button>
+    <button onclick="selectTaste('sweet')">Sweet</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Today you should eat:</h2>
+    <p id="food"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
